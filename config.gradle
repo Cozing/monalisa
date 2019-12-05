@@ -1,0 +1,24 @@
+ext{
+    android = [
+            compileSdkVersion      : 26,
+            buildToolsVersion      : "26.0.2",
+            minSdkVersion          : 14,
+            targetSdkVersion       : 26,
+            versionCode            : 1000,
+            versionName            : "1.0.0"
+     ]
+
+    dependVersion = [
+            support                : "26.1.0"
+    ]
+
+    //工程依赖
+    dependencies = [
+            //android-support
+            "support-v4"            : "com.android.support:support-v4:${dependVersion.support}",
+            "appcompat-v7"          : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "supportMultidex"       : "com.android.support:multidex:1.0.2"
+
+            //ui
+    ]
+}
